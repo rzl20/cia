@@ -69,7 +69,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
       Swal.fire('Kalo belum na jangan lupa makan').then((result) => {
         Swal.fire({
           title: ' ',
-          html: `B tau lu akhir akhir ini ni ada basibuk banget`,
+          html: `B tau lu akhir akhir ini ni ada basibuk`,
           timer: 2000,
           timerProgressBar: true,
           showConfirmButton: false,
