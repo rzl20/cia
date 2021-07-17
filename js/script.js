@@ -6,12 +6,12 @@ let doi;
 if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
-  doi = "Irna";
+  doi = "Ciya";
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = doi;
-footer.href = "https://www.instagram.com/adamukti/";
+footer.href = "https://www.instagram.com/zal.zip/";
 
 function time() {
   var d = new Date();
@@ -59,17 +59,17 @@ function selesai() {
 
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
-    title: 'Hai byy!',
-    html: `Selamat ${time()}, Kamu udah ${makan()}?`,
+    title: 'Hai Ciyaaa!',
+    html: `${time()} Ooo, Lu su ${makan()}?`,
     timer: 2500,
     timerProgressBar: true,
     showConfirmButton: false,
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
-      Swal.fire('Kalau belum jangan lupa makan yaa').then((result) => {
+      Swal.fire('Kalo belum na jangan lupa makan').then((result) => {
         Swal.fire({
           title: ' ',
-          html: `Aku tau ko kamu lagi sibuk banget`,
+          html: `B tau lu akhir akhir ini ni ada basibuk banget`,
           timer: 2000,
           timerProgressBar: true,
           showConfirmButton: false,
@@ -77,13 +77,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
           if (result.dismiss === Swal.DismissReason.timer) {
             Swal.fire({
               title: ' ',
-              html: `Lagi pusing banget, cape banget`,
+              html: `Pasti pusing trus ju cape:(`,
               timer: 2000,
               timerProgressBar: true,
               showConfirmButton: false,
             }).then((result) => {
               if (result.dismiss === Swal.DismissReason.timer) {
-                Swal.fire('Semangat terus ya kamu :)').then((result) => {
+                Swal.fire('Semangat terus Ciyaa:)').then((result) => {
                   Swal.fire(
                     'Jangan keseringan begadang!',
                     '',
@@ -94,36 +94,36 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       '',
                       'error'
                     ).then((result) => {
-                      Swal.fire('Aku dukung kamu terus ko').then((result) => {
+                      Swal.fire('B dukung lu terus kok').then((result) => {
                         Swal.fire({
-                          title: 'Oh iya aku mau nanya',
-                          text: 'Ada sesuatu yang lagi kamu pingin ga?',
+                          title: 'Oh iya b mau nanya',
+                          text: 'Ada sesuatu yang lu pingin ko sonde?',
                           showDenyButton: true,
-                          confirmButtonText: `Ada by`,
-                          denyButtonText: `Ga ada ko`,
+                          confirmButtonText: `Ada`,
+                          denyButtonText: `Sonde ada kok`,
                         }).then((result) => {
                           /* Read more about isConfirmed, isDenied below */
                           if (result.isConfirmed) {
                             Swal.fire({
                               title: 'Mau apa?',
                               input: 'text',
-                              inputPlaceholder: 'ex: Seblacc, boba, or etc',
+                              inputPlaceholder: 'ex: Es Krim, boba, atau yang lain',
                               showCancelButton: false,
                               inputValidator: (value) => {
                                 if (!value) {
-                                  return 'Isi dulu dong by'
+                                  return 'Isi dulu dong'
                                 }
                               }
                             }).then((result) => {
-                              Swal.fire('Okey by', 'Nanti aku kabulin kemauan kamu yaa', 'success').then((result) => {
-                                Swal.fire("See ya! Aku kangen ^^").then((result) => {
+                              Swal.fire('Okey Ciyaa', 'Nanti b coba kabulin lu pung permintaan', 'success').then((result) => {
+                                Swal.fire("See ya! Ciyaaaaa^^").then((result) => {
                                   selesai()
                                 });
                               })
                             })
                           } else if (result.isDenied) {
-                            Swal.fire('Oh okedeh kalo ga ada').then((result) => {
-                              Swal.fire("See ya! Aku kangen ^^").then((result) => {
+                            Swal.fire('Oh okedeh kalo sonde ada').then((result) => {
+                              Swal.fire("See ya! Ciyaaaa^^").then((result) => {
                                 selesai()
                               });
                             })
