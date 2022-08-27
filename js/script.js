@@ -50,7 +50,7 @@ function makan() {
 function selesai() {
   const teks = document.getElementById('teks');
   const btn = document.querySelector('.tombol');
-  teks.innerHTML = `Semangat ${doi} <i
+  teks.innerHTML = `Maafin aku ya ${doi} <i
   class="fas fa-heart text-danger animate__animated animate__heartBeat animate__repeat-3"></i>`;
   btn.classList.add('d-none');
   teks.classList.remove('d-none');  
@@ -70,7 +70,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
         Swal.fire({
           title: ' ',
           html: `Aku tau sih akhir akhir ini jarang banget chatingan sama kamu`,
-          timer: 2000,
+          timer: 4000,
           timerProgressBar: true,
           showConfirmButton: false,
         }).then((result) => {
@@ -78,7 +78,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
             Swal.fire({
               title: ' ',
               html: `Yaaa pasti kamu kesal juga pas chat tapi aku ga respon, padahal lagi online`,
-              timer: 2000,
+              timer: 5000,
               timerProgressBar: true,
               showConfirmButton: false,
             }).then((result) => {
